@@ -13,17 +13,23 @@ static void sort(int arr[])
 			arr[j+1] = arr[j];
 			j = j-1;
 			arr[j+1] = key;
+			
 		}
+		 //System.out.print(arr[j]);
 }
 }
 public static void main(String args[])
 {
+	long startTime = System.nanoTime();
 	int arr[] = {1,-2,-3,5,20,9};
 	Insertionsort.sort(arr);
 	for(int elm :arr)
 	{
 		System.out.println(elm + " ");
 	}
+	long estimatedTime = System.nanoTime() - startTime;
+	System.out.println("Estimated time (in nanoseconds) to get the  numbers: "+estimatedTime);
+
 	
 }
 }
