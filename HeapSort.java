@@ -50,6 +50,7 @@ public static void main(String args[])
 	System.out.println("Sorted array is");
 	printArray(arr);
 	long estimatedTime = (System.nanoTime() - startTime)/1000000;
-	System.out.println("Estimated time (in nanoseconds) to get the  numbers: "+estimatedTime);
+	System.out.println("Estimated time (in nanoseconds) to get the "
+			+ " numbers: "+estimatedTime);
 }
 }
